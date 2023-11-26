@@ -7,7 +7,7 @@
 CRUX_ARM_VERSION = 3.7
 CRUX_ARM_GIT_PREFIX = https://github.com/crux-arm
 CRUX_GIT_PREFIX = git://crux.nu/ports
-CRUX_GIT_HASH = 82133dc2ec67969ee99158b987ef17a4ac0eff39
+CRUX_GIT_HASH = 9c8527ff8fb9d3f905920f024c5f308cdd025cc0
 
 # This is the top dir where Makefile lives
 # We should use this with care, because it could harcode absolute paths in files
@@ -53,7 +53,7 @@ RELEASE_TAR_FILE = crux-arm-$(CRUX_ARM_VERSION).rootfs.tar.xz
 
 # Optimization based on devices
 ifndef DEVICE_OPTIMIZATION
-DEVICE_OPTIMIZATION = arm
+DEVICE_OPTIMIZATION = arm64
 endif
 # Load CFLAGS and COLLECTIONS for selected optimization
 include $(WORKSPACE_DIR)/devices/$(DEVICE_OPTIMIZATION).mk
